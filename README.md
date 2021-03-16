@@ -100,7 +100,6 @@ Class | Method | HTTP request | Description
 *MarketOpenapiApi* | [**create_app_version**](docs/MarketOpenapiApi.md#create_app_version) | **POST** /app-server/openapi/apps/{appID}/versions | post an app version
 *MarketOpenapiApi* | [**get_app_hub_info**](docs/MarketOpenapiApi.md#get_app_hub_info) | **GET** /app-server/openapi/apps/{appID}/apphubinfo | get app image save info
 *MarketOpenapiApi* | [**get_market_info**](docs/MarketOpenapiApi.md#get_market_info) | **GET** /app-server/openapi/info | get mrket info
-*MarketOpenapiApi* | [**get_orgs**](docs/MarketOpenapiApi.md#get_orgs) | **GET** /app-server/openapi/organizations | 获取组织机构(行业)列表
 *MarketOpenapiApi* | [**get_user_app_detail**](docs/MarketOpenapiApi.md#get_user_app_detail) | **GET** /app-server/openapi/apps/{appID} | Query the specified application details
 *MarketOpenapiApi* | [**get_user_app_list**](docs/MarketOpenapiApi.md#get_user_app_list) | **GET** /app-server/openapi/apps | A list of installable applications
 *MarketOpenapiApi* | [**get_user_app_version_detail**](docs/MarketOpenapiApi.md#get_user_app_version_detail) | **GET** /app-server/openapi/apps/{appID}/versions/{version} | Query the specified version details of the specified application
@@ -125,7 +124,6 @@ Class | Method | HTTP request | Description
  - [V1ImageInfo](docs/V1ImageInfo.md)
  - [V1MarketInfoResponse](docs/V1MarketInfoResponse.md)
  - [V1MarketUIAppTagsResponse](docs/V1MarketUIAppTagsResponse.md)
- - [V1Organization](docs/V1Organization.md)
  - [V1StoreAppVersionTemplate](docs/V1StoreAppVersionTemplate.md)
  - [V1StoreAppVersionTempleteApp](docs/V1StoreAppVersionTempleteApp.md)
  - [V1StoreAppVersionTempleteAppDepService](docs/V1StoreAppVersionTempleteAppDepService.md)
