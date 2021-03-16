@@ -56,7 +56,6 @@ class V1MarketUIAppTagsResponse(object):
     def tags(self):
         """Gets the tags of this V1MarketUIAppTagsResponse.  # noqa: E501
 
-        标签列表  # noqa: E501
 
         :return: The tags of this V1MarketUIAppTagsResponse.  # noqa: E501
         :rtype: list[str]
@@ -67,7 +66,6 @@ class V1MarketUIAppTagsResponse(object):
     def tags(self, tags):
         """Sets the tags of this V1MarketUIAppTagsResponse.
 
-        标签列表  # noqa: E501
 
         :param tags: The tags of this V1MarketUIAppTagsResponse.  # noqa: E501
         :type tags: list[str]

@@ -34,116 +34,28 @@ class V1AppVersionListResponse(object):
                             and the value is json key in definition.
     """
     openapi_types = {
-        'page': 'int',
-        'page_size': 'int',
-        'total': 'int',
         'versions': 'list[V1AppVersionBase]'
     }
 
     attribute_map = {
-        'page': 'page',
-        'page_size': 'pageSize',
-        'total': 'total',
         'versions': 'versions'
     }
 
-    def __init__(self, page=None, page_size=None, total=None, versions=None, local_vars_configuration=None):  # noqa: E501
+    def __init__(self, versions=None, local_vars_configuration=None):  # noqa: E501
         """V1AppVersionListResponse - a model defined in OpenAPI"""  # noqa: E501
         if local_vars_configuration is None:
             local_vars_configuration = Configuration()
         self.local_vars_configuration = local_vars_configuration
 
-        self._page = None
-        self._page_size = None
-        self._total = None
         self._versions = None
         self.discriminator = None
 
-        self.page = page
-        self.page_size = page_size
-        self.total = total
         self.versions = versions
-
-    @property
-    def page(self):
-        """Gets the page of this V1AppVersionListResponse.  # noqa: E501
-
-        页码  # noqa: E501
-
-        :return: The page of this V1AppVersionListResponse.  # noqa: E501
-        :rtype: int
-        """
-        return self._page
-
-    @page.setter
-    def page(self, page):
-        """Sets the page of this V1AppVersionListResponse.
-
-        页码  # noqa: E501
-
-        :param page: The page of this V1AppVersionListResponse.  # noqa: E501
-        :type page: int
-        """
-        if self.local_vars_configuration.client_side_validation and page is None:  # noqa: E501
-            raise ValueError("Invalid value for `page`, must not be `None`")  # noqa: E501
-
-        self._page = page
-
-    @property
-    def page_size(self):
-        """Gets the page_size of this V1AppVersionListResponse.  # noqa: E501
-
-        每页大小  # noqa: E501
-
-        :return: The page_size of this V1AppVersionListResponse.  # noqa: E501
-        :rtype: int
-        """
-        return self._page_size
-
-    @page_size.setter
-    def page_size(self, page_size):
-        """Sets the page_size of this V1AppVersionListResponse.
-
-        每页大小  # noqa: E501
-
-        :param page_size: The page_size of this V1AppVersionListResponse.  # noqa: E501
-        :type page_size: int
-        """
-        if self.local_vars_configuration.client_side_validation and page_size is None:  # noqa: E501
-            raise ValueError("Invalid value for `page_size`, must not be `None`")  # noqa: E501
-
-        self._page_size = page_size
-
-    @property
-    def total(self):
-        """Gets the total of this V1AppVersionListResponse.  # noqa: E501
-
-        总数  # noqa: E501
-
-        :return: The total of this V1AppVersionListResponse.  # noqa: E501
-        :rtype: int
-        """
-        return self._total
-
-    @total.setter
-    def total(self, total):
-        """Sets the total of this V1AppVersionListResponse.
-
-        总数  # noqa: E501
-
-        :param total: The total of this V1AppVersionListResponse.  # noqa: E501
-        :type total: int
-        """
-        if self.local_vars_configuration.client_side_validation and total is None:  # noqa: E501
-            raise ValueError("Invalid value for `total`, must not be `None`")  # noqa: E501
-
-        self._total = total
 
     @property
     def versions(self):
         """Gets the versions of this V1AppVersionListResponse.  # noqa: E501
 
-        版本列表  # noqa: E501
 
         :return: The versions of this V1AppVersionListResponse.  # noqa: E501
         :rtype: list[V1AppVersionBase]
@@ -154,7 +66,6 @@ class V1AppVersionListResponse(object):
     def versions(self, versions):
         """Sets the versions of this V1AppVersionListResponse.
 
-        版本列表  # noqa: E501
 
         :param versions: The versions of this V1AppVersionListResponse.  # noqa: E501
         :type versions: list[V1AppVersionBase]

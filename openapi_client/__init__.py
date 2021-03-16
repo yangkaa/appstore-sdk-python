@@ -32,7 +32,6 @@ from openapi_client.exceptions import ApiAttributeError
 from openapi_client.exceptions import ApiException
 # import models into sdk package
 from openapi_client.models.controller_result import ControllerResult
-from openapi_client.models.models_app_attachment import ModelsAppAttachment
 from openapi_client.models.restfulutil_result import RestfulutilResult
 from openapi_client.models.v1_app_base_info import V1AppBaseInfo
 from openapi_client.models.v1_app_detail_info_response import V1AppDetailInfoResponse
@@ -47,7 +46,6 @@ from openapi_client.models.v1_image_info import V1ImageInfo
 from openapi_client.models.v1_market_info_response import V1MarketInfoResponse
 from openapi_client.models.v1_market_ui_app_tags_response import V1MarketUIAppTagsResponse
 from openapi_client.models.v1_organization import V1Organization
-from openapi_client.models.v1_saa_s_app_user import V1SaaSAppUser
 from openapi_client.models.v1_store_app_version_template import V1StoreAppVersionTemplate
 from openapi_client.models.v1_store_app_version_templete_app import V1StoreAppVersionTempleteApp
 from openapi_client.models.v1_store_app_version_templete_app_dep_service import V1StoreAppVersionTempleteAppDepService

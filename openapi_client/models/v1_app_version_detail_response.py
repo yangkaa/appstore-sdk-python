@@ -108,7 +108,6 @@ class V1AppVersionDetailResponse(object):
     def app_key_id(self):
         """Gets the app_key_id of this V1AppVersionDetailResponse.  # noqa: E501
 
-        应用ID  # noqa: E501
 
         :return: The app_key_id of this V1AppVersionDetailResponse.  # noqa: E501
         :rtype: str
@@ -119,7 +118,6 @@ class V1AppVersionDetailResponse(object):
     def app_key_id(self, app_key_id):
         """Sets the app_key_id of this V1AppVersionDetailResponse.
 
-        应用ID  # noqa: E501
 
         :param app_key_id: The app_key_id of this V1AppVersionDetailResponse.  # noqa: E501
         :type app_key_id: str
@@ -133,7 +131,6 @@ class V1AppVersionDetailResponse(object):
     def app_name(self):
         """Gets the app_name of this V1AppVersionDetailResponse.  # noqa: E501
 
-        应用名称  # noqa: E501
 
         :return: The app_name of this V1AppVersionDetailResponse.  # noqa: E501
         :rtype: str
@@ -144,7 +141,6 @@ class V1AppVersionDetailResponse(object):
     def app_name(self, app_name):
         """Sets the app_name of this V1AppVersionDetailResponse.
 
-        应用名称  # noqa: E501
 
         :param app_name: The app_name of this V1AppVersionDetailResponse.  # noqa: E501
         :type app_name: str
@@ -181,7 +177,6 @@ class V1AppVersionDetailResponse(object):
     def delivery_mode(self):
         """Gets the delivery_mode of this V1AppVersionDetailResponse.  # noqa: E501
 
-        交付类型  # noqa: E501
 
         :return: The delivery_mode of this V1AppVersionDetailResponse.  # noqa: E501
         :rtype: str
@@ -192,7 +187,6 @@ class V1AppVersionDetailResponse(object):
     def delivery_mode(self, delivery_mode):
         """Sets the delivery_mode of this V1AppVersionDetailResponse.
 
-        交付类型  # noqa: E501
 
         :param delivery_mode: The delivery_mode of this V1AppVersionDetailResponse.  # noqa: E501
         :type delivery_mode: str
@@ -206,7 +200,6 @@ class V1AppVersionDetailResponse(object):
     def description(self):
         """Gets the description of this V1AppVersionDetailResponse.  # noqa: E501
 
-        描述  # noqa: E501
 
         :return: The description of this V1AppVersionDetailResponse.  # noqa: E501
         :rtype: str
@@ -217,7 +210,6 @@ class V1AppVersionDetailResponse(object):
     def description(self, description):
         """Sets the description of this V1AppVersionDetailResponse.
 
-        描述  # noqa: E501
 
         :param description: The description of this V1AppVersionDetailResponse.  # noqa: E501
         :type description: str
@@ -231,7 +223,6 @@ class V1AppVersionDetailResponse(object):
     def enable(self):
         """Gets the enable of this V1AppVersionDetailResponse.  # noqa: E501
 
-        是否开启  # noqa: E501
 
         :return: The enable of this V1AppVersionDetailResponse.  # noqa: E501
         :rtype: bool
@@ -242,7 +233,6 @@ class V1AppVersionDetailResponse(object):
     def enable(self, enable):
         """Sets the enable of this V1AppVersionDetailResponse.
 
-        是否开启  # noqa: E501
 
         :param enable: The enable of this V1AppVersionDetailResponse.  # noqa: E501
         :type enable: bool
@@ -256,7 +246,6 @@ class V1AppVersionDetailResponse(object):
     def market_id(self):
         """Gets the market_id of this V1AppVersionDetailResponse.  # noqa: E501
 
-        商店 ID  # noqa: E501
 
         :return: The market_id of this V1AppVersionDetailResponse.  # noqa: E501
         :rtype: str
@@ -267,7 +256,6 @@ class V1AppVersionDetailResponse(object):
     def market_id(self, market_id):
         """Sets the market_id of this V1AppVersionDetailResponse.
 
-        商店 ID  # noqa: E501
 
         :param market_id: The market_id of this V1AppVersionDetailResponse.  # noqa: E501
         :type market_id: str
@@ -281,7 +269,6 @@ class V1AppVersionDetailResponse(object):
     def rainbond_version(self):
         """Gets the rainbond_version of this V1AppVersionDetailResponse.  # noqa: E501
 
-        rainbond 版本  # noqa: E501
 
         :return: The rainbond_version of this V1AppVersionDetailResponse.  # noqa: E501
         :rtype: str
@@ -292,7 +279,6 @@ class V1AppVersionDetailResponse(object):
     def rainbond_version(self, rainbond_version):
         """Sets the rainbond_version of this V1AppVersionDetailResponse.
 
-        rainbond 版本  # noqa: E501
 
         :param rainbond_version: The rainbond_version of this V1AppVersionDetailResponse.  # noqa: E501
         :type rainbond_version: str
@@ -306,7 +292,6 @@ class V1AppVersionDetailResponse(object):
     def template(self):
         """Gets the template of this V1AppVersionDetailResponse.  # noqa: E501
 
-        模板  # noqa: E501
 
         :return: The template of this V1AppVersionDetailResponse.  # noqa: E501
         :rtype: str
@@ -317,7 +302,6 @@ class V1AppVersionDetailResponse(object):
     def template(self, template):
         """Sets the template of this V1AppVersionDetailResponse.
 
-        模板  # noqa: E501
 
         :param template: The template of this V1AppVersionDetailResponse.  # noqa: E501
         :type template: str
@@ -331,7 +315,6 @@ class V1AppVersionDetailResponse(object):
     def template_type(self):
         """Gets the template_type of this V1AppVersionDetailResponse.  # noqa: E501
 
-        模板类型  # noqa: E501
 
         :return: The template_type of this V1AppVersionDetailResponse.  # noqa: E501
         :rtype: str
@@ -342,7 +325,6 @@ class V1AppVersionDetailResponse(object):
     def template_type(self, template_type):
         """Sets the template_type of this V1AppVersionDetailResponse.
 
-        模板类型  # noqa: E501
 
         :param template_type: The template_type of this V1AppVersionDetailResponse.  # noqa: E501
         :type template_type: str
@@ -379,7 +361,6 @@ class V1AppVersionDetailResponse(object):
     def update_version(self):
         """Gets the update_version of this V1AppVersionDetailResponse.  # noqa: E501
 
-        更新版本  # noqa: E501
 
         :return: The update_version of this V1AppVersionDetailResponse.  # noqa: E501
         :rtype: int
@@ -390,7 +371,6 @@ class V1AppVersionDetailResponse(object):
     def update_version(self, update_version):
         """Sets the update_version of this V1AppVersionDetailResponse.
 
-        更新版本  # noqa: E501
 
         :param update_version: The update_version of this V1AppVersionDetailResponse.  # noqa: E501
         :type update_version: int
@@ -404,7 +384,6 @@ class V1AppVersionDetailResponse(object):
     def version(self):
         """Gets the version of this V1AppVersionDetailResponse.  # noqa: E501
 
-        版本  # noqa: E501
 
         :return: The version of this V1AppVersionDetailResponse.  # noqa: E501
         :rtype: str
@@ -415,7 +394,6 @@ class V1AppVersionDetailResponse(object):
     def version(self, version):
         """Sets the version of this V1AppVersionDetailResponse.
 
-        版本  # noqa: E501
 
         :param version: The version of this V1AppVersionDetailResponse.  # noqa: E501
         :type version: str
@@ -429,7 +407,6 @@ class V1AppVersionDetailResponse(object):
     def version_alias(self):
         """Gets the version_alias of this V1AppVersionDetailResponse.  # noqa: E501
 
-        版本别名  # noqa: E501
 
         :return: The version_alias of this V1AppVersionDetailResponse.  # noqa: E501
         :rtype: str
@@ -440,7 +417,6 @@ class V1AppVersionDetailResponse(object):
     def version_alias(self, version_alias):
         """Sets the version_alias of this V1AppVersionDetailResponse.
 
-        版本别名  # noqa: E501
 
         :param version_alias: The version_alias of this V1AppVersionDetailResponse.  # noqa: E501
         :type version_alias: str

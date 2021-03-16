@@ -76,7 +76,6 @@ class V1AppModelCreateRequest(object):
     def desc(self):
         """Gets the desc of this V1AppModelCreateRequest.  # noqa: E501
 
-        说明  # noqa: E501
 
         :return: The desc of this V1AppModelCreateRequest.  # noqa: E501
         :rtype: str
@@ -87,7 +86,6 @@ class V1AppModelCreateRequest(object):
     def desc(self, desc):
         """Sets the desc of this V1AppModelCreateRequest.
 
-        说明  # noqa: E501
 
         :param desc: The desc of this V1AppModelCreateRequest.  # noqa: E501
         :type desc: str
@@ -101,7 +99,6 @@ class V1AppModelCreateRequest(object):
     def introduction(self):
         """Gets the introduction of this V1AppModelCreateRequest.  # noqa: E501
 
-        介绍  # noqa: E501
 
         :return: The introduction of this V1AppModelCreateRequest.  # noqa: E501
         :rtype: str
@@ -112,7 +109,6 @@ class V1AppModelCreateRequest(object):
     def introduction(self, introduction):
         """Sets the introduction of this V1AppModelCreateRequest.
 
-        介绍  # noqa: E501
 
         :param introduction: The introduction of this V1AppModelCreateRequest.  # noqa: E501
         :type introduction: str
@@ -126,7 +122,6 @@ class V1AppModelCreateRequest(object):
     def logo(self):
         """Gets the logo of this V1AppModelCreateRequest.  # noqa: E501
 
-        logo  # noqa: E501
 
         :return: The logo of this V1AppModelCreateRequest.  # noqa: E501
         :rtype: str
@@ -137,7 +132,6 @@ class V1AppModelCreateRequest(object):
     def logo(self, logo):
         """Sets the logo of this V1AppModelCreateRequest.
 
-        logo  # noqa: E501
 
         :param logo: The logo of this V1AppModelCreateRequest.  # noqa: E501
         :type logo: str
@@ -151,7 +145,6 @@ class V1AppModelCreateRequest(object):
     def name(self):
         """Gets the name of this V1AppModelCreateRequest.  # noqa: E501
 
-        应用名称  # noqa: E501
 
         :return: The name of this V1AppModelCreateRequest.  # noqa: E501
         :rtype: str
@@ -162,7 +155,6 @@ class V1AppModelCreateRequest(object):
     def name(self, name):
         """Sets the name of this V1AppModelCreateRequest.
 
-        应用名称  # noqa: E501
 
         :param name: The name of this V1AppModelCreateRequest.  # noqa: E501
         :type name: str
@@ -176,7 +168,6 @@ class V1AppModelCreateRequest(object):
     def publish_type(self):
         """Gets the publish_type of this V1AppModelCreateRequest.  # noqa: E501
 
-        发布类型. private: 私有; public: 公开.  # noqa: E501
 
         :return: The publish_type of this V1AppModelCreateRequest.  # noqa: E501
         :rtype: str
@@ -187,7 +178,6 @@ class V1AppModelCreateRequest(object):
     def publish_type(self, publish_type):
         """Sets the publish_type of this V1AppModelCreateRequest.
 
-        发布类型. private: 私有; public: 公开.  # noqa: E501
 
         :param publish_type: The publish_type of this V1AppModelCreateRequest.  # noqa: E501
         :type publish_type: str
@@ -201,7 +191,6 @@ class V1AppModelCreateRequest(object):
     def tags(self):
         """Gets the tags of this V1AppModelCreateRequest.  # noqa: E501
 
-        标签  # noqa: E501
 
         :return: The tags of this V1AppModelCreateRequest.  # noqa: E501
         :rtype: list[str]
@@ -212,7 +201,6 @@ class V1AppModelCreateRequest(object):
     def tags(self, tags):
         """Sets the tags of this V1AppModelCreateRequest.
 
-        标签  # noqa: E501
 
         :param tags: The tags of this V1AppModelCreateRequest.  # noqa: E501
         :type tags: list[str]

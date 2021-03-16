@@ -68,7 +68,6 @@ class V1UserAppListResponse(object):
     def apps(self):
         """Gets the apps of this V1UserAppListResponse.  # noqa: E501
 
-        应用列表  # noqa: E501
 
         :return: The apps of this V1UserAppListResponse.  # noqa: E501
         :rtype: list[V1AppBaseInfo]
@@ -79,7 +78,6 @@ class V1UserAppListResponse(object):
     def apps(self, apps):
         """Sets the apps of this V1UserAppListResponse.
 
-        应用列表  # noqa: E501
 
         :param apps: The apps of this V1UserAppListResponse.  # noqa: E501
         :type apps: list[V1AppBaseInfo]
@@ -93,7 +91,6 @@ class V1UserAppListResponse(object):
     def page(self):
         """Gets the page of this V1UserAppListResponse.  # noqa: E501
 
-        页码  # noqa: E501
 
         :return: The page of this V1UserAppListResponse.  # noqa: E501
         :rtype: int
@@ -104,7 +101,6 @@ class V1UserAppListResponse(object):
     def page(self, page):
         """Sets the page of this V1UserAppListResponse.
 
-        页码  # noqa: E501
 
         :param page: The page of this V1UserAppListResponse.  # noqa: E501
         :type page: int
@@ -118,7 +114,6 @@ class V1UserAppListResponse(object):
     def page_size(self):
         """Gets the page_size of this V1UserAppListResponse.  # noqa: E501
 
-        每页大小  # noqa: E501
 
         :return: The page_size of this V1UserAppListResponse.  # noqa: E501
         :rtype: int
@@ -129,7 +124,6 @@ class V1UserAppListResponse(object):
     def page_size(self, page_size):
         """Sets the page_size of this V1UserAppListResponse.
 
-        每页大小  # noqa: E501
 
         :param page_size: The page_size of this V1UserAppListResponse.  # noqa: E501
         :type page_size: int
@@ -143,7 +137,6 @@ class V1UserAppListResponse(object):
     def total(self):
         """Gets the total of this V1UserAppListResponse.  # noqa: E501
 
-        总数  # noqa: E501
 
         :return: The total of this V1UserAppListResponse.  # noqa: E501
         :rtype: int
@@ -154,7 +147,6 @@ class V1UserAppListResponse(object):
     def total(self, total):
         """Sets the total of this V1UserAppListResponse.
 
-        总数  # noqa: E501
 
         :param total: The total of this V1UserAppListResponse.  # noqa: E501
         :type total: int

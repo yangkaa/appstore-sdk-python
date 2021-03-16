@@ -38,7 +38,7 @@ class MarketOpenapiApi(object):
         self.api_client = api_client
 
     def create_app(self, body, **kwargs):  # noqa: E501
-        """创建应用  # noqa: E501
+        """create an app model  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
@@ -48,7 +48,7 @@ class MarketOpenapiApi(object):
 
         :param body: (required)
         :type body: V1AppModelCreateRequest
-        :param market_domain: 商店域
+        :param market_domain: the market domain
         :type market_domain: str
         :param async_req: Whether to execute the request asynchronously.
         :type async_req: bool, optional
@@ -69,7 +69,7 @@ class MarketOpenapiApi(object):
         return self.create_app_with_http_info(body, **kwargs)  # noqa: E501
 
     def create_app_with_http_info(self, body, **kwargs):  # noqa: E501
-        """创建应用  # noqa: E501
+        """create an app model  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
@@ -79,7 +79,7 @@ class MarketOpenapiApi(object):
 
         :param body: (required)
         :type body: V1AppModelCreateRequest
-        :param market_domain: 商店域
+        :param market_domain: the market domain
         :type market_domain: str
         :param async_req: Whether to execute the request asynchronously.
         :type async_req: bool, optional
@@ -158,7 +158,7 @@ class MarketOpenapiApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['api_key']  # noqa: E501
 
         return self.api_client.call_api(
             '/app-server/openapi/apps', 'POST',
@@ -178,7 +178,7 @@ class MarketOpenapiApi(object):
             _request_auth=local_var_params.get('_request_auth'))
 
     def create_app_version(self, app_id, body, **kwargs):  # noqa: E501
-        """创建应用版本  # noqa: E501
+        """post an app version  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
@@ -186,11 +186,11 @@ class MarketOpenapiApi(object):
         >>> thread = api.create_app_version(app_id, body, async_req=True)
         >>> result = thread.get()
 
-        :param app_id: 应用 ID (required)
+        :param app_id: The app ID (required)
         :type app_id: str
         :param body: (required)
         :type body: V1CreateAppPaaSVersionRequest
-        :param market_domain: 商店域
+        :param market_domain: the market domain
         :type market_domain: str
         :param async_req: Whether to execute the request asynchronously.
         :type async_req: bool, optional
@@ -211,7 +211,7 @@ class MarketOpenapiApi(object):
         return self.create_app_version_with_http_info(app_id, body, **kwargs)  # noqa: E501
 
     def create_app_version_with_http_info(self, app_id, body, **kwargs):  # noqa: E501
-        """创建应用版本  # noqa: E501
+        """post an app version  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
@@ -219,11 +219,11 @@ class MarketOpenapiApi(object):
         >>> thread = api.create_app_version_with_http_info(app_id, body, async_req=True)
         >>> result = thread.get()
 
-        :param app_id: 应用 ID (required)
+        :param app_id: The app ID (required)
         :type app_id: str
         :param body: (required)
         :type body: V1CreateAppPaaSVersionRequest
-        :param market_domain: 商店域
+        :param market_domain: the market domain
         :type market_domain: str
         :param async_req: Whether to execute the request asynchronously.
         :type async_req: bool, optional
@@ -309,7 +309,7 @@ class MarketOpenapiApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['api_key']  # noqa: E501
 
         return self.api_client.call_api(
             '/app-server/openapi/apps/{appID}/versions', 'POST',
@@ -329,7 +329,7 @@ class MarketOpenapiApi(object):
             _request_auth=local_var_params.get('_request_auth'))
 
     def get_app_hub_info(self, app_id, **kwargs):  # noqa: E501
-        """获取镜像仓库信息  # noqa: E501
+        """get app image save info  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
@@ -337,9 +337,9 @@ class MarketOpenapiApi(object):
         >>> thread = api.get_app_hub_info(app_id, async_req=True)
         >>> result = thread.get()
 
-        :param app_id: 应用 ID (required)
+        :param app_id: The app ID (required)
         :type app_id: str
-        :param market_domain: 商店域
+        :param market_domain: the market domain
         :type market_domain: str
         :param async_req: Whether to execute the request asynchronously.
         :type async_req: bool, optional
@@ -360,7 +360,7 @@ class MarketOpenapiApi(object):
         return self.get_app_hub_info_with_http_info(app_id, **kwargs)  # noqa: E501
 
     def get_app_hub_info_with_http_info(self, app_id, **kwargs):  # noqa: E501
-        """获取镜像仓库信息  # noqa: E501
+        """get app image save info  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
@@ -368,9 +368,9 @@ class MarketOpenapiApi(object):
         >>> thread = api.get_app_hub_info_with_http_info(app_id, async_req=True)
         >>> result = thread.get()
 
-        :param app_id: 应用 ID (required)
+        :param app_id: The app ID (required)
         :type app_id: str
-        :param market_domain: 商店域
+        :param market_domain: the market domain
         :type market_domain: str
         :param async_req: Whether to execute the request asynchronously.
         :type async_req: bool, optional
@@ -445,7 +445,7 @@ class MarketOpenapiApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['api_key']  # noqa: E501
 
         return self.api_client.call_api(
             '/app-server/openapi/apps/{appID}/apphubinfo', 'GET',
@@ -465,7 +465,7 @@ class MarketOpenapiApi(object):
             _request_auth=local_var_params.get('_request_auth'))
 
     def get_market_info(self, **kwargs):  # noqa: E501
-        """获取商店信息  # noqa: E501
+        """get mrket info  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
@@ -473,7 +473,7 @@ class MarketOpenapiApi(object):
         >>> thread = api.get_market_info(async_req=True)
         >>> result = thread.get()
 
-        :param market_domain: 商店域
+        :param market_domain: the market domain
         :type market_domain: str
         :param async_req: Whether to execute the request asynchronously.
         :type async_req: bool, optional
@@ -494,7 +494,7 @@ class MarketOpenapiApi(object):
         return self.get_market_info_with_http_info(**kwargs)  # noqa: E501
 
     def get_market_info_with_http_info(self, **kwargs):  # noqa: E501
-        """获取商店信息  # noqa: E501
+        """get mrket info  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
@@ -502,7 +502,7 @@ class MarketOpenapiApi(object):
         >>> thread = api.get_market_info_with_http_info(async_req=True)
         >>> result = thread.get()
 
-        :param market_domain: 商店域
+        :param market_domain: the market domain
         :type market_domain: str
         :param async_req: Whether to execute the request asynchronously.
         :type async_req: bool, optional
@@ -570,7 +570,7 @@ class MarketOpenapiApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['api_key']  # noqa: E501
 
         return self.api_client.call_api(
             '/app-server/openapi/info', 'GET',
@@ -688,7 +688,7 @@ class MarketOpenapiApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['api_key']  # noqa: E501
 
         return self.api_client.call_api(
             '/app-server/openapi/organizations', 'GET',
@@ -708,7 +708,7 @@ class MarketOpenapiApi(object):
             _request_auth=local_var_params.get('_request_auth'))
 
     def get_user_app_detail(self, app_id, market_domain, **kwargs):  # noqa: E501
-        """应用详情  # noqa: E501
+        """Query the specified application details  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
@@ -716,9 +716,9 @@ class MarketOpenapiApi(object):
         >>> thread = api.get_user_app_detail(app_id, market_domain, async_req=True)
         >>> result = thread.get()
 
-        :param app_id: 应用 ID (required)
+        :param app_id: The app ID (required)
         :type app_id: str
-        :param market_domain: 商店域 (required)
+        :param market_domain: the market domain (required)
         :type market_domain: str
         :param async_req: Whether to execute the request asynchronously.
         :type async_req: bool, optional
@@ -739,7 +739,7 @@ class MarketOpenapiApi(object):
         return self.get_user_app_detail_with_http_info(app_id, market_domain, **kwargs)  # noqa: E501
 
     def get_user_app_detail_with_http_info(self, app_id, market_domain, **kwargs):  # noqa: E501
-        """应用详情  # noqa: E501
+        """Query the specified application details  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
@@ -747,9 +747,9 @@ class MarketOpenapiApi(object):
         >>> thread = api.get_user_app_detail_with_http_info(app_id, market_domain, async_req=True)
         >>> result = thread.get()
 
-        :param app_id: 应用 ID (required)
+        :param app_id: The app ID (required)
         :type app_id: str
-        :param market_domain: 商店域 (required)
+        :param market_domain: the market domain (required)
         :type market_domain: str
         :param async_req: Whether to execute the request asynchronously.
         :type async_req: bool, optional
@@ -828,7 +828,7 @@ class MarketOpenapiApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['api_key']  # noqa: E501
 
         return self.api_client.call_api(
             '/app-server/openapi/apps/{appID}', 'GET',
@@ -848,7 +848,7 @@ class MarketOpenapiApi(object):
             _request_auth=local_var_params.get('_request_auth'))
 
     def get_user_app_list(self, market_domain, **kwargs):  # noqa: E501
-        """应用列表  # noqa: E501
+        """A list of installable applications  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
@@ -856,15 +856,15 @@ class MarketOpenapiApi(object):
         >>> thread = api.get_user_app_list(market_domain, async_req=True)
         >>> result = thread.get()
 
-        :param market_domain: 商店域 (required)
+        :param market_domain: the market domain (required)
         :type market_domain: str
-        :param query: 搜索项
+        :param query: The search criteria
         :type query: str
-        :param query_all: 是否查询全部
+        :param query_all: true
         :type query_all: bool
-        :param page: 页码
+        :param page: query page num
         :type page: int
-        :param page_size: 每页的大小. -1 表示不限制
+        :param page_size: query page size, if -1 return all app
         :type page_size: int
         :param async_req: Whether to execute the request asynchronously.
         :type async_req: bool, optional
@@ -885,7 +885,7 @@ class MarketOpenapiApi(object):
         return self.get_user_app_list_with_http_info(market_domain, **kwargs)  # noqa: E501
 
     def get_user_app_list_with_http_info(self, market_domain, **kwargs):  # noqa: E501
-        """应用列表  # noqa: E501
+        """A list of installable applications  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
@@ -893,15 +893,15 @@ class MarketOpenapiApi(object):
         >>> thread = api.get_user_app_list_with_http_info(market_domain, async_req=True)
         >>> result = thread.get()
 
-        :param market_domain: 商店域 (required)
+        :param market_domain: the market domain (required)
         :type market_domain: str
-        :param query: 搜索项
+        :param query: The search criteria
         :type query: str
-        :param query_all: 是否查询全部
+        :param query_all: true
         :type query_all: bool
-        :param page: 页码
+        :param page: query page num
         :type page: int
-        :param page_size: 每页的大小. -1 表示不限制
+        :param page_size: query page size, if -1 return all app
         :type page_size: int
         :param async_req: Whether to execute the request asynchronously.
         :type async_req: bool, optional
@@ -985,7 +985,7 @@ class MarketOpenapiApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['api_key']  # noqa: E501
 
         return self.api_client.call_api(
             '/app-server/openapi/apps', 'GET',
@@ -1005,7 +1005,7 @@ class MarketOpenapiApi(object):
             _request_auth=local_var_params.get('_request_auth'))
 
     def get_user_app_version_detail(self, app_id, version, **kwargs):  # noqa: E501
-        """应用版本信息  # noqa: E501
+        """Query the specified version details of the specified application  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
@@ -1013,15 +1013,15 @@ class MarketOpenapiApi(object):
         >>> thread = api.get_user_app_version_detail(app_id, version, async_req=True)
         >>> result = thread.get()
 
-        :param app_id: 应用 ID (required)
+        :param app_id: The app ID (required)
         :type app_id: str
-        :param version: 应用版本 (required)
+        :param version: The app version (required)
         :type version: str
-        :param market_domain: 商店域
+        :param market_domain: the market domain
         :type market_domain: str
-        :param for_install: 使用用于安装
+        :param for_install: Whether used for installation
         :type for_install: bool
-        :param get_template: 是否获取模板
+        :param get_template: Whether get templete
         :type get_template: bool
         :param async_req: Whether to execute the request asynchronously.
         :type async_req: bool, optional
@@ -1042,7 +1042,7 @@ class MarketOpenapiApi(object):
         return self.get_user_app_version_detail_with_http_info(app_id, version, **kwargs)  # noqa: E501
 
     def get_user_app_version_detail_with_http_info(self, app_id, version, **kwargs):  # noqa: E501
-        """应用版本信息  # noqa: E501
+        """Query the specified version details of the specified application  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
@@ -1050,15 +1050,15 @@ class MarketOpenapiApi(object):
         >>> thread = api.get_user_app_version_detail_with_http_info(app_id, version, async_req=True)
         >>> result = thread.get()
 
-        :param app_id: 应用 ID (required)
+        :param app_id: The app ID (required)
         :type app_id: str
-        :param version: 应用版本 (required)
+        :param version: The app version (required)
         :type version: str
-        :param market_domain: 商店域
+        :param market_domain: the market domain
         :type market_domain: str
-        :param for_install: 使用用于安装
+        :param for_install: Whether used for installation
         :type for_install: bool
-        :param get_template: 是否获取模板
+        :param get_template: Whether get templete
         :type get_template: bool
         :param async_req: Whether to execute the request asynchronously.
         :type async_req: bool, optional
@@ -1146,7 +1146,7 @@ class MarketOpenapiApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['api_key']  # noqa: E501
 
         return self.api_client.call_api(
             '/app-server/openapi/apps/{appID}/versions/{version}', 'GET',
@@ -1166,7 +1166,7 @@ class MarketOpenapiApi(object):
             _request_auth=local_var_params.get('_request_auth'))
 
     def get_user_app_versions(self, app_id, query_all, market_domain, **kwargs):  # noqa: E501
-        """应用版本列表  # noqa: E501
+        """Query the specified application version list  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
@@ -1174,11 +1174,11 @@ class MarketOpenapiApi(object):
         >>> thread = api.get_user_app_versions(app_id, query_all, market_domain, async_req=True)
         >>> result = thread.get()
 
-        :param app_id: 应用 ID (required)
+        :param app_id: The app ID (required)
         :type app_id: str
         :param query_all: query all versions, must have write perm (required)
         :type query_all: bool
-        :param market_domain: 商店域 (required)
+        :param market_domain: the market domain (required)
         :type market_domain: str
         :param async_req: Whether to execute the request asynchronously.
         :type async_req: bool, optional
@@ -1199,7 +1199,7 @@ class MarketOpenapiApi(object):
         return self.get_user_app_versions_with_http_info(app_id, query_all, market_domain, **kwargs)  # noqa: E501
 
     def get_user_app_versions_with_http_info(self, app_id, query_all, market_domain, **kwargs):  # noqa: E501
-        """应用版本列表  # noqa: E501
+        """Query the specified application version list  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
@@ -1207,11 +1207,11 @@ class MarketOpenapiApi(object):
         >>> thread = api.get_user_app_versions_with_http_info(app_id, query_all, market_domain, async_req=True)
         >>> result = thread.get()
 
-        :param app_id: 应用 ID (required)
+        :param app_id: The app ID (required)
         :type app_id: str
         :param query_all: query all versions, must have write perm (required)
         :type query_all: bool
-        :param market_domain: 商店域 (required)
+        :param market_domain: the market domain (required)
         :type market_domain: str
         :param async_req: Whether to execute the request asynchronously.
         :type async_req: bool, optional
@@ -1297,7 +1297,7 @@ class MarketOpenapiApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['api_key']  # noqa: E501
 
         return self.api_client.call_api(
             '/app-server/openapi/apps/{appID}/versions', 'GET',
@@ -1317,7 +1317,7 @@ class MarketOpenapiApi(object):
             _request_auth=local_var_params.get('_request_auth'))
 
     def update_app(self, app_id, body, **kwargs):  # noqa: E501
-        """更新应用信息  # noqa: E501
+        """update app model base info  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
@@ -1325,11 +1325,11 @@ class MarketOpenapiApi(object):
         >>> thread = api.update_app(app_id, body, async_req=True)
         >>> result = thread.get()
 
-        :param app_id: 应用 ID (required)
+        :param app_id: The app ID (required)
         :type app_id: str
         :param body: (required)
         :type body: V1AppUpdateRequest
-        :param market_domain: 商店域
+        :param market_domain: the market domain
         :type market_domain: str
         :param async_req: Whether to execute the request asynchronously.
         :type async_req: bool, optional
@@ -1350,7 +1350,7 @@ class MarketOpenapiApi(object):
         return self.update_app_with_http_info(app_id, body, **kwargs)  # noqa: E501
 
     def update_app_with_http_info(self, app_id, body, **kwargs):  # noqa: E501
-        """更新应用信息  # noqa: E501
+        """update app model base info  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
@@ -1358,11 +1358,11 @@ class MarketOpenapiApi(object):
         >>> thread = api.update_app_with_http_info(app_id, body, async_req=True)
         >>> result = thread.get()
 
-        :param app_id: 应用 ID (required)
+        :param app_id: The app ID (required)
         :type app_id: str
         :param body: (required)
         :type body: V1AppUpdateRequest
-        :param market_domain: 商店域
+        :param market_domain: the market domain
         :type market_domain: str
         :param async_req: Whether to execute the request asynchronously.
         :type async_req: bool, optional
@@ -1448,7 +1448,7 @@ class MarketOpenapiApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['api_key']  # noqa: E501
 
         return self.api_client.call_api(
             '/app-server/openapi/apps/{appID}', 'PUT',

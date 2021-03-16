@@ -58,6 +58,20 @@ configuration = openapi_client.Configuration(
     host = "http://127.0.0.1:8080"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure API key authorization: api_key
+configuration = openapi_client.Configuration(
+    host = "http://127.0.0.1:8080",
+    api_key = {
+        'api_key': 'YOUR_API_KEY'
+    }
+)
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['api_key'] = 'Bearer'
 
 
 # Enter a context with an instance of the API client
@@ -65,10 +79,10 @@ with openapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = openapi_client.MarketOpenapiApi(api_client)
     body = openapi_client.V1AppModelCreateRequest() # V1AppModelCreateRequest | 
-market_domain = 'market_domain_example' # str | 商店域 (optional)
+market_domain = 'market_domain_example' # str | the market domain (optional)
 
     try:
-        # 创建应用
+        # create an app model
         api_response = api_instance.create_app(body, market_domain=market_domain)
         pprint(api_response)
     except ApiException as e:
@@ -82,23 +96,22 @@ All URIs are relative to *http://127.0.0.1:8080*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
-*MarketOpenapiApi* | [**create_app**](docs/MarketOpenapiApi.md#create_app) | **POST** /app-server/openapi/apps | 创建应用
-*MarketOpenapiApi* | [**create_app_version**](docs/MarketOpenapiApi.md#create_app_version) | **POST** /app-server/openapi/apps/{appID}/versions | 创建应用版本
-*MarketOpenapiApi* | [**get_app_hub_info**](docs/MarketOpenapiApi.md#get_app_hub_info) | **GET** /app-server/openapi/apps/{appID}/apphubinfo | 获取镜像仓库信息
-*MarketOpenapiApi* | [**get_market_info**](docs/MarketOpenapiApi.md#get_market_info) | **GET** /app-server/openapi/info | 获取商店信息
+*MarketOpenapiApi* | [**create_app**](docs/MarketOpenapiApi.md#create_app) | **POST** /app-server/openapi/apps | create an app model
+*MarketOpenapiApi* | [**create_app_version**](docs/MarketOpenapiApi.md#create_app_version) | **POST** /app-server/openapi/apps/{appID}/versions | post an app version
+*MarketOpenapiApi* | [**get_app_hub_info**](docs/MarketOpenapiApi.md#get_app_hub_info) | **GET** /app-server/openapi/apps/{appID}/apphubinfo | get app image save info
+*MarketOpenapiApi* | [**get_market_info**](docs/MarketOpenapiApi.md#get_market_info) | **GET** /app-server/openapi/info | get mrket info
 *MarketOpenapiApi* | [**get_orgs**](docs/MarketOpenapiApi.md#get_orgs) | **GET** /app-server/openapi/organizations | 获取组织机构(行业)列表
-*MarketOpenapiApi* | [**get_user_app_detail**](docs/MarketOpenapiApi.md#get_user_app_detail) | **GET** /app-server/openapi/apps/{appID} | 应用详情
-*MarketOpenapiApi* | [**get_user_app_list**](docs/MarketOpenapiApi.md#get_user_app_list) | **GET** /app-server/openapi/apps | 应用列表
-*MarketOpenapiApi* | [**get_user_app_version_detail**](docs/MarketOpenapiApi.md#get_user_app_version_detail) | **GET** /app-server/openapi/apps/{appID}/versions/{version} | 应用版本信息
-*MarketOpenapiApi* | [**get_user_app_versions**](docs/MarketOpenapiApi.md#get_user_app_versions) | **GET** /app-server/openapi/apps/{appID}/versions | 应用版本列表
-*MarketOpenapiApi* | [**update_app**](docs/MarketOpenapiApi.md#update_app) | **PUT** /app-server/openapi/apps/{appID} | 更新应用信息
+*MarketOpenapiApi* | [**get_user_app_detail**](docs/MarketOpenapiApi.md#get_user_app_detail) | **GET** /app-server/openapi/apps/{appID} | Query the specified application details
+*MarketOpenapiApi* | [**get_user_app_list**](docs/MarketOpenapiApi.md#get_user_app_list) | **GET** /app-server/openapi/apps | A list of installable applications
+*MarketOpenapiApi* | [**get_user_app_version_detail**](docs/MarketOpenapiApi.md#get_user_app_version_detail) | **GET** /app-server/openapi/apps/{appID}/versions/{version} | Query the specified version details of the specified application
+*MarketOpenapiApi* | [**get_user_app_versions**](docs/MarketOpenapiApi.md#get_user_app_versions) | **GET** /app-server/openapi/apps/{appID}/versions | Query the specified application version list
+*MarketOpenapiApi* | [**update_app**](docs/MarketOpenapiApi.md#update_app) | **PUT** /app-server/openapi/apps/{appID} | update app model base info
 *RegistryApiApi* | [**do_auth**](docs/RegistryApiApi.md#do_auth) | **GET** /app-server/v1/registry/auth | image registry auth server
 
 
 ## Documentation For Models
 
  - [ControllerResult](docs/ControllerResult.md)
- - [ModelsAppAttachment](docs/ModelsAppAttachment.md)
  - [RestfulutilResult](docs/RestfulutilResult.md)
  - [V1AppBaseInfo](docs/V1AppBaseInfo.md)
  - [V1AppDetailInfoResponse](docs/V1AppDetailInfoResponse.md)
@@ -113,7 +126,6 @@ Class | Method | HTTP request | Description
  - [V1MarketInfoResponse](docs/V1MarketInfoResponse.md)
  - [V1MarketUIAppTagsResponse](docs/V1MarketUIAppTagsResponse.md)
  - [V1Organization](docs/V1Organization.md)
- - [V1SaaSAppUser](docs/V1SaaSAppUser.md)
  - [V1StoreAppVersionTemplate](docs/V1StoreAppVersionTemplate.md)
  - [V1StoreAppVersionTempleteApp](docs/V1StoreAppVersionTempleteApp.md)
  - [V1StoreAppVersionTempleteAppDepService](docs/V1StoreAppVersionTempleteAppDepService.md)
@@ -132,7 +144,13 @@ Class | Method | HTTP request | Description
 
 ## Documentation For Authorization
 
- All endpoints do not require authorization.
+
+## api_key
+
+- **Type**: API key
+- **API key parameter name**: Authorization
+- **Location**: HTTP header
+
 
 ## Author
 

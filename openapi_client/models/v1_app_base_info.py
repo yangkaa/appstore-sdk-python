@@ -34,15 +34,12 @@ class V1AppBaseInfo(object):
                             and the value is json key in definition.
     """
     openapi_types = {
-        'advantage': 'str',
         'app_detail_url': 'str',
         'app_key_id': 'str',
         'create_time': 'datetime',
-        'creator': 'str',
         'desc': 'str',
         'dev_status': 'str',
         'download_count': 'int',
-        'entrance': 'str',
         'install_count': 'int',
         'introduction': 'str',
         'introduction_html': 'str',
@@ -52,29 +49,22 @@ class V1AppBaseInfo(object):
         'market_name': 'str',
         'market_url': 'str',
         'name': 'str',
-        'org_id': 'str',
         'publish_type': 'str',
-        'scenario': 'str',
         'show_count': 'int',
         'start_count': 'int',
         'status': 'str',
         'tags': 'list[str]',
-        'up_shelves_time': 'datetime',
         'update_time': 'datetime',
-        'user': 'V1SaaSAppUser',
         'versions': 'list[V1AppVersionBase]'
     }
 
     attribute_map = {
-        'advantage': 'advantage',
         'app_detail_url': 'appDetailURL',
         'app_key_id': 'appKeyID',
         'create_time': 'createTime',
-        'creator': 'creator',
         'desc': 'desc',
         'dev_status': 'devStatus',
         'download_count': 'downloadCount',
-        'entrance': 'entrance',
         'install_count': 'installCount',
         'introduction': 'introduction',
         'introduction_html': 'introductionHTML',
@@ -84,34 +74,27 @@ class V1AppBaseInfo(object):
         'market_name': 'marketName',
         'market_url': 'marketURL',
         'name': 'name',
-        'org_id': 'orgID',
         'publish_type': 'publishType',
-        'scenario': 'scenario',
         'show_count': 'showCount',
         'start_count': 'startCount',
         'status': 'status',
         'tags': 'tags',
-        'up_shelves_time': 'upShelvesTime',
         'update_time': 'updateTime',
-        'user': 'user',
         'versions': 'versions'
     }
 
-    def __init__(self, advantage=None, app_detail_url=None, app_key_id=None, create_time=None, creator=None, desc=None, dev_status=None, download_count=None, entrance=None, install_count=None, introduction=None, introduction_html=None, is_official=None, logo=None, market_id=None, market_name=None, market_url=None, name=None, org_id=None, publish_type=None, scenario=None, show_count=None, start_count=None, status=None, tags=None, up_shelves_time=None, update_time=None, user=None, versions=None, local_vars_configuration=None):  # noqa: E501
+    def __init__(self, app_detail_url=None, app_key_id=None, create_time=None, desc=None, dev_status=None, download_count=None, install_count=None, introduction=None, introduction_html=None, is_official=None, logo=None, market_id=None, market_name=None, market_url=None, name=None, publish_type=None, show_count=None, start_count=None, status=None, tags=None, update_time=None, versions=None, local_vars_configuration=None):  # noqa: E501
         """V1AppBaseInfo - a model defined in OpenAPI"""  # noqa: E501
         if local_vars_configuration is None:
             local_vars_configuration = Configuration()
         self.local_vars_configuration = local_vars_configuration
 
-        self._advantage = None
         self._app_detail_url = None
         self._app_key_id = None
         self._create_time = None
-        self._creator = None
         self._desc = None
         self._dev_status = None
         self._download_count = None
-        self._entrance = None
         self._install_count = None
         self._introduction = None
         self._introduction_html = None
@@ -121,28 +104,21 @@ class V1AppBaseInfo(object):
         self._market_name = None
         self._market_url = None
         self._name = None
-        self._org_id = None
         self._publish_type = None
-        self._scenario = None
         self._show_count = None
         self._start_count = None
         self._status = None
         self._tags = None
-        self._up_shelves_time = None
         self._update_time = None
-        self._user = None
         self._versions = None
         self.discriminator = None
 
-        self.advantage = advantage
         self.app_detail_url = app_detail_url
         self.app_key_id = app_key_id
         self.create_time = create_time
-        self.creator = creator
         self.desc = desc
         self.dev_status = dev_status
         self.download_count = download_count
-        self.entrance = entrance
         self.install_count = install_count
         self.introduction = introduction
         self.introduction_html = introduction_html
@@ -152,48 +128,18 @@ class V1AppBaseInfo(object):
         self.market_name = market_name
         self.market_url = market_url
         self.name = name
-        self.org_id = org_id
         self.publish_type = publish_type
-        self.scenario = scenario
         self.show_count = show_count
         self.start_count = start_count
         self.status = status
         self.tags = tags
-        self.up_shelves_time = up_shelves_time
         self.update_time = update_time
-        self.user = user
         self.versions = versions
-
-    @property
-    def advantage(self):
-        """Gets the advantage of this V1AppBaseInfo.  # noqa: E501
-
-        产品优势  # noqa: E501
-
-        :return: The advantage of this V1AppBaseInfo.  # noqa: E501
-        :rtype: str
-        """
-        return self._advantage
-
-    @advantage.setter
-    def advantage(self, advantage):
-        """Sets the advantage of this V1AppBaseInfo.
-
-        产品优势  # noqa: E501
-
-        :param advantage: The advantage of this V1AppBaseInfo.  # noqa: E501
-        :type advantage: str
-        """
-        if self.local_vars_configuration.client_side_validation and advantage is None:  # noqa: E501
-            raise ValueError("Invalid value for `advantage`, must not be `None`")  # noqa: E501
-
-        self._advantage = advantage
 
     @property
     def app_detail_url(self):
         """Gets the app_detail_url of this V1AppBaseInfo.  # noqa: E501
 
-        应用详情 URL  # noqa: E501
 
         :return: The app_detail_url of this V1AppBaseInfo.  # noqa: E501
         :rtype: str
@@ -204,7 +150,6 @@ class V1AppBaseInfo(object):
     def app_detail_url(self, app_detail_url):
         """Sets the app_detail_url of this V1AppBaseInfo.
 
-        应用详情 URL  # noqa: E501
 
         :param app_detail_url: The app_detail_url of this V1AppBaseInfo.  # noqa: E501
         :type app_detail_url: str
@@ -218,7 +163,6 @@ class V1AppBaseInfo(object):
     def app_key_id(self):
         """Gets the app_key_id of this V1AppBaseInfo.  # noqa: E501
 
-        应用 ID  # noqa: E501
 
         :return: The app_key_id of this V1AppBaseInfo.  # noqa: E501
         :rtype: str
@@ -229,7 +173,6 @@ class V1AppBaseInfo(object):
     def app_key_id(self, app_key_id):
         """Sets the app_key_id of this V1AppBaseInfo.
 
-        应用 ID  # noqa: E501
 
         :param app_key_id: The app_key_id of this V1AppBaseInfo.  # noqa: E501
         :type app_key_id: str
@@ -243,7 +186,6 @@ class V1AppBaseInfo(object):
     def create_time(self):
         """Gets the create_time of this V1AppBaseInfo.  # noqa: E501
 
-        创建时间  # noqa: E501
 
         :return: The create_time of this V1AppBaseInfo.  # noqa: E501
         :rtype: datetime
@@ -254,7 +196,6 @@ class V1AppBaseInfo(object):
     def create_time(self, create_time):
         """Sets the create_time of this V1AppBaseInfo.
 
-        创建时间  # noqa: E501
 
         :param create_time: The create_time of this V1AppBaseInfo.  # noqa: E501
         :type create_time: datetime
@@ -265,35 +206,9 @@ class V1AppBaseInfo(object):
         self._create_time = create_time
 
     @property
-    def creator(self):
-        """Gets the creator of this V1AppBaseInfo.  # noqa: E501
-
-        创建人  # noqa: E501
-
-        :return: The creator of this V1AppBaseInfo.  # noqa: E501
-        :rtype: str
-        """
-        return self._creator
-
-    @creator.setter
-    def creator(self, creator):
-        """Sets the creator of this V1AppBaseInfo.
-
-        创建人  # noqa: E501
-
-        :param creator: The creator of this V1AppBaseInfo.  # noqa: E501
-        :type creator: str
-        """
-        if self.local_vars_configuration.client_side_validation and creator is None:  # noqa: E501
-            raise ValueError("Invalid value for `creator`, must not be `None`")  # noqa: E501
-
-        self._creator = creator
-
-    @property
     def desc(self):
         """Gets the desc of this V1AppBaseInfo.  # noqa: E501
 
-        产品概述  # noqa: E501
 
         :return: The desc of this V1AppBaseInfo.  # noqa: E501
         :rtype: str
@@ -304,7 +219,6 @@ class V1AppBaseInfo(object):
     def desc(self, desc):
         """Sets the desc of this V1AppBaseInfo.
 
-        产品概述  # noqa: E501
 
         :param desc: The desc of this V1AppBaseInfo.  # noqa: E501
         :type desc: str
@@ -318,7 +232,6 @@ class V1AppBaseInfo(object):
     def dev_status(self):
         """Gets the dev_status of this V1AppBaseInfo.  # noqa: E501
 
-        开发状态  # noqa: E501
 
         :return: The dev_status of this V1AppBaseInfo.  # noqa: E501
         :rtype: str
@@ -329,7 +242,6 @@ class V1AppBaseInfo(object):
     def dev_status(self, dev_status):
         """Sets the dev_status of this V1AppBaseInfo.
 
-        开发状态  # noqa: E501
 
         :param dev_status: The dev_status of this V1AppBaseInfo.  # noqa: E501
         :type dev_status: str
@@ -343,7 +255,6 @@ class V1AppBaseInfo(object):
     def download_count(self):
         """Gets the download_count of this V1AppBaseInfo.  # noqa: E501
 
-        下载次数  # noqa: E501
 
         :return: The download_count of this V1AppBaseInfo.  # noqa: E501
         :rtype: int
@@ -354,7 +265,6 @@ class V1AppBaseInfo(object):
     def download_count(self, download_count):
         """Sets the download_count of this V1AppBaseInfo.
 
-        下载次数  # noqa: E501
 
         :param download_count: The download_count of this V1AppBaseInfo.  # noqa: E501
         :type download_count: int
@@ -365,35 +275,9 @@ class V1AppBaseInfo(object):
         self._download_count = download_count
 
     @property
-    def entrance(self):
-        """Gets the entrance of this V1AppBaseInfo.  # noqa: E501
-
-        体验入口  # noqa: E501
-
-        :return: The entrance of this V1AppBaseInfo.  # noqa: E501
-        :rtype: str
-        """
-        return self._entrance
-
-    @entrance.setter
-    def entrance(self, entrance):
-        """Sets the entrance of this V1AppBaseInfo.
-
-        体验入口  # noqa: E501
-
-        :param entrance: The entrance of this V1AppBaseInfo.  # noqa: E501
-        :type entrance: str
-        """
-        if self.local_vars_configuration.client_side_validation and entrance is None:  # noqa: E501
-            raise ValueError("Invalid value for `entrance`, must not be `None`")  # noqa: E501
-
-        self._entrance = entrance
-
-    @property
     def install_count(self):
         """Gets the install_count of this V1AppBaseInfo.  # noqa: E501
 
-        安装次数  # noqa: E501
 
         :return: The install_count of this V1AppBaseInfo.  # noqa: E501
         :rtype: int
@@ -404,7 +288,6 @@ class V1AppBaseInfo(object):
     def install_count(self, install_count):
         """Sets the install_count of this V1AppBaseInfo.
 
-        安装次数  # noqa: E501
 
         :param install_count: The install_count of this V1AppBaseInfo.  # noqa: E501
         :type install_count: int
@@ -418,7 +301,6 @@ class V1AppBaseInfo(object):
     def introduction(self):
         """Gets the introduction of this V1AppBaseInfo.  # noqa: E501
 
-        应用介绍  # noqa: E501
 
         :return: The introduction of this V1AppBaseInfo.  # noqa: E501
         :rtype: str
@@ -429,7 +311,6 @@ class V1AppBaseInfo(object):
     def introduction(self, introduction):
         """Sets the introduction of this V1AppBaseInfo.
 
-        应用介绍  # noqa: E501
 
         :param introduction: The introduction of this V1AppBaseInfo.  # noqa: E501
         :type introduction: str
@@ -443,7 +324,6 @@ class V1AppBaseInfo(object):
     def introduction_html(self):
         """Gets the introduction_html of this V1AppBaseInfo.  # noqa: E501
 
-        应用介绍  # noqa: E501
 
         :return: The introduction_html of this V1AppBaseInfo.  # noqa: E501
         :rtype: str
@@ -454,7 +334,6 @@ class V1AppBaseInfo(object):
     def introduction_html(self, introduction_html):
         """Sets the introduction_html of this V1AppBaseInfo.
 
-        应用介绍  # noqa: E501
 
         :param introduction_html: The introduction_html of this V1AppBaseInfo.  # noqa: E501
         :type introduction_html: str
@@ -468,7 +347,6 @@ class V1AppBaseInfo(object):
     def is_official(self):
         """Gets the is_official of this V1AppBaseInfo.  # noqa: E501
 
-        是否是官方应用  # noqa: E501
 
         :return: The is_official of this V1AppBaseInfo.  # noqa: E501
         :rtype: bool
@@ -479,7 +357,6 @@ class V1AppBaseInfo(object):
     def is_official(self, is_official):
         """Sets the is_official of this V1AppBaseInfo.
 
-        是否是官方应用  # noqa: E501
 
         :param is_official: The is_official of this V1AppBaseInfo.  # noqa: E501
         :type is_official: bool
@@ -493,7 +370,6 @@ class V1AppBaseInfo(object):
     def logo(self):
         """Gets the logo of this V1AppBaseInfo.  # noqa: E501
 
-        Logo  # noqa: E501
 
         :return: The logo of this V1AppBaseInfo.  # noqa: E501
         :rtype: str
@@ -504,7 +380,6 @@ class V1AppBaseInfo(object):
     def logo(self, logo):
         """Sets the logo of this V1AppBaseInfo.
 
-        Logo  # noqa: E501
 
         :param logo: The logo of this V1AppBaseInfo.  # noqa: E501
         :type logo: str
@@ -518,7 +393,6 @@ class V1AppBaseInfo(object):
     def market_id(self):
         """Gets the market_id of this V1AppBaseInfo.  # noqa: E501
 
-        商店 ID  # noqa: E501
 
         :return: The market_id of this V1AppBaseInfo.  # noqa: E501
         :rtype: str
@@ -529,7 +403,6 @@ class V1AppBaseInfo(object):
     def market_id(self, market_id):
         """Sets the market_id of this V1AppBaseInfo.
 
-        商店 ID  # noqa: E501
 
         :param market_id: The market_id of this V1AppBaseInfo.  # noqa: E501
         :type market_id: str
@@ -543,7 +416,6 @@ class V1AppBaseInfo(object):
     def market_name(self):
         """Gets the market_name of this V1AppBaseInfo.  # noqa: E501
 
-        商店名称  # noqa: E501
 
         :return: The market_name of this V1AppBaseInfo.  # noqa: E501
         :rtype: str
@@ -554,7 +426,6 @@ class V1AppBaseInfo(object):
     def market_name(self, market_name):
         """Sets the market_name of this V1AppBaseInfo.
 
-        商店名称  # noqa: E501
 
         :param market_name: The market_name of this V1AppBaseInfo.  # noqa: E501
         :type market_name: str
@@ -568,7 +439,6 @@ class V1AppBaseInfo(object):
     def market_url(self):
         """Gets the market_url of this V1AppBaseInfo.  # noqa: E501
 
-        商店 URL  # noqa: E501
 
         :return: The market_url of this V1AppBaseInfo.  # noqa: E501
         :rtype: str
@@ -579,7 +449,6 @@ class V1AppBaseInfo(object):
     def market_url(self, market_url):
         """Sets the market_url of this V1AppBaseInfo.
 
-        商店 URL  # noqa: E501
 
         :param market_url: The market_url of this V1AppBaseInfo.  # noqa: E501
         :type market_url: str
@@ -593,7 +462,6 @@ class V1AppBaseInfo(object):
     def name(self):
         """Gets the name of this V1AppBaseInfo.  # noqa: E501
 
-        应用名称  # noqa: E501
 
         :return: The name of this V1AppBaseInfo.  # noqa: E501
         :rtype: str
@@ -604,7 +472,6 @@ class V1AppBaseInfo(object):
     def name(self, name):
         """Sets the name of this V1AppBaseInfo.
 
-        应用名称  # noqa: E501
 
         :param name: The name of this V1AppBaseInfo.  # noqa: E501
         :type name: str
@@ -615,35 +482,9 @@ class V1AppBaseInfo(object):
         self._name = name
 
     @property
-    def org_id(self):
-        """Gets the org_id of this V1AppBaseInfo.  # noqa: E501
-
-        组织机构 ID  # noqa: E501
-
-        :return: The org_id of this V1AppBaseInfo.  # noqa: E501
-        :rtype: str
-        """
-        return self._org_id
-
-    @org_id.setter
-    def org_id(self, org_id):
-        """Sets the org_id of this V1AppBaseInfo.
-
-        组织机构 ID  # noqa: E501
-
-        :param org_id: The org_id of this V1AppBaseInfo.  # noqa: E501
-        :type org_id: str
-        """
-        if self.local_vars_configuration.client_side_validation and org_id is None:  # noqa: E501
-            raise ValueError("Invalid value for `org_id`, must not be `None`")  # noqa: E501
-
-        self._org_id = org_id
-
-    @property
     def publish_type(self):
         """Gets the publish_type of this V1AppBaseInfo.  # noqa: E501
 
-        发布类型. private: 私有; public: 公有  # noqa: E501
 
         :return: The publish_type of this V1AppBaseInfo.  # noqa: E501
         :rtype: str
@@ -654,7 +495,6 @@ class V1AppBaseInfo(object):
     def publish_type(self, publish_type):
         """Sets the publish_type of this V1AppBaseInfo.
 
-        发布类型. private: 私有; public: 公有  # noqa: E501
 
         :param publish_type: The publish_type of this V1AppBaseInfo.  # noqa: E501
         :type publish_type: str
@@ -665,35 +505,9 @@ class V1AppBaseInfo(object):
         self._publish_type = publish_type
 
     @property
-    def scenario(self):
-        """Gets the scenario of this V1AppBaseInfo.  # noqa: E501
-
-        应用场景  # noqa: E501
-
-        :return: The scenario of this V1AppBaseInfo.  # noqa: E501
-        :rtype: str
-        """
-        return self._scenario
-
-    @scenario.setter
-    def scenario(self, scenario):
-        """Sets the scenario of this V1AppBaseInfo.
-
-        应用场景  # noqa: E501
-
-        :param scenario: The scenario of this V1AppBaseInfo.  # noqa: E501
-        :type scenario: str
-        """
-        if self.local_vars_configuration.client_side_validation and scenario is None:  # noqa: E501
-            raise ValueError("Invalid value for `scenario`, must not be `None`")  # noqa: E501
-
-        self._scenario = scenario
-
-    @property
     def show_count(self):
         """Gets the show_count of this V1AppBaseInfo.  # noqa: E501
 
-        访问次数  # noqa: E501
 
         :return: The show_count of this V1AppBaseInfo.  # noqa: E501
         :rtype: int
@@ -704,7 +518,6 @@ class V1AppBaseInfo(object):
     def show_count(self, show_count):
         """Sets the show_count of this V1AppBaseInfo.
 
-        访问次数  # noqa: E501
 
         :param show_count: The show_count of this V1AppBaseInfo.  # noqa: E501
         :type show_count: int
@@ -741,7 +554,6 @@ class V1AppBaseInfo(object):
     def status(self):
         """Gets the status of this V1AppBaseInfo.  # noqa: E501
 
-        状态  # noqa: E501
 
         :return: The status of this V1AppBaseInfo.  # noqa: E501
         :rtype: str
@@ -752,7 +564,6 @@ class V1AppBaseInfo(object):
     def status(self, status):
         """Sets the status of this V1AppBaseInfo.
 
-        状态  # noqa: E501
 
         :param status: The status of this V1AppBaseInfo.  # noqa: E501
         :type status: str
@@ -766,7 +577,6 @@ class V1AppBaseInfo(object):
     def tags(self):
         """Gets the tags of this V1AppBaseInfo.  # noqa: E501
 
-        标签列表  # noqa: E501
 
         :return: The tags of this V1AppBaseInfo.  # noqa: E501
         :rtype: list[str]
@@ -777,7 +587,6 @@ class V1AppBaseInfo(object):
     def tags(self, tags):
         """Sets the tags of this V1AppBaseInfo.
 
-        标签列表  # noqa: E501
 
         :param tags: The tags of this V1AppBaseInfo.  # noqa: E501
         :type tags: list[str]
@@ -786,31 +595,6 @@ class V1AppBaseInfo(object):
             raise ValueError("Invalid value for `tags`, must not be `None`")  # noqa: E501
 
         self._tags = tags
-
-    @property
-    def up_shelves_time(self):
-        """Gets the up_shelves_time of this V1AppBaseInfo.  # noqa: E501
-
-        上架时间  # noqa: E501
-
-        :return: The up_shelves_time of this V1AppBaseInfo.  # noqa: E501
-        :rtype: datetime
-        """
-        return self._up_shelves_time
-
-    @up_shelves_time.setter
-    def up_shelves_time(self, up_shelves_time):
-        """Sets the up_shelves_time of this V1AppBaseInfo.
-
-        上架时间  # noqa: E501
-
-        :param up_shelves_time: The up_shelves_time of this V1AppBaseInfo.  # noqa: E501
-        :type up_shelves_time: datetime
-        """
-        if self.local_vars_configuration.client_side_validation and up_shelves_time is None:  # noqa: E501
-            raise ValueError("Invalid value for `up_shelves_time`, must not be `None`")  # noqa: E501
-
-        self._up_shelves_time = up_shelves_time
 
     @property
     def update_time(self):
@@ -836,33 +620,9 @@ class V1AppBaseInfo(object):
         self._update_time = update_time
 
     @property
-    def user(self):
-        """Gets the user of this V1AppBaseInfo.  # noqa: E501
-
-
-        :return: The user of this V1AppBaseInfo.  # noqa: E501
-        :rtype: V1SaaSAppUser
-        """
-        return self._user
-
-    @user.setter
-    def user(self, user):
-        """Sets the user of this V1AppBaseInfo.
-
-
-        :param user: The user of this V1AppBaseInfo.  # noqa: E501
-        :type user: V1SaaSAppUser
-        """
-        if self.local_vars_configuration.client_side_validation and user is None:  # noqa: E501
-            raise ValueError("Invalid value for `user`, must not be `None`")  # noqa: E501
-
-        self._user = user
-
-    @property
     def versions(self):
         """Gets the versions of this V1AppBaseInfo.  # noqa: E501
 
-        版本列表  # noqa: E501
 
         :return: The versions of this V1AppBaseInfo.  # noqa: E501
         :rtype: list[V1AppVersionBase]
@@ -873,7 +633,6 @@ class V1AppBaseInfo(object):
     def versions(self, versions):
         """Sets the versions of this V1AppBaseInfo.
 
-        版本列表  # noqa: E501
 
         :param versions: The versions of this V1AppBaseInfo.  # noqa: E501
         :type versions: list[V1AppVersionBase]
