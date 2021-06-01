@@ -8,6 +8,7 @@ Name | Type | Description | Notes
 **description** | **str** |  | 
 **name** | **str** |  | 
 **status** | **int** |  | 
+**version** | **str** | 当前SAAS版本 | 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
